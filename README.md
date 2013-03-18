@@ -41,27 +41,27 @@ The iPod 3D Orientation Visualizer patch uses the rotational orientation of the 
 
 ### iPod MoCap Recording & Playback
 
-![iPod-Mocap-Recorder](https://github.com/evenbekkedal/robin-mocap-demo/blob/master/screenshots/iPod-Mocap-Recorder.png)
+![iPod-Mocap-Recorder](https://raw.github.com/evenbekkedal/robin-mocap-demo/master/screenshots/iPod-Mocap-Recorder.png)
 
 The iPod-Mocap-Recorder patch can receive MoCap data through the left input and record this data. The data will be stored in a textfile inside the folder containing the patcher. By inserting an identifying name in the *subject name* textbox  and pressing enter, the recordings will be easily to gathered for use in further work. It is possible to record several tests with the same identifying name. 
 
-![iPod-Mocap-Playback](https://github.com/evenbekkedal/robin-mocap-demo/blob/master/screenshots/iPod-Mocap-Playback.png)
+![iPod-Mocap-Playback](https://raw.github.com/evenbekkedal/robin-mocap-demo/master/screenshots/iPod-Mocap-Playback.png)
 
 The iPod-Mocap-Playback patch will be able to read and play back the MoCap data recorded by the *iPodMocapRecorder* patcher. **Note:** Data output will not display correctly. Payback rate, or parsing?
 
 ### iPod MoCap Tools
 
-![iPod-Input](https://github.com/evenbekkedal/robin-mocap-demo/blob/master/screenshots/iPod-Input.png)
+![iPod-Input](https://raw.github.com/evenbekkedal/robin-mocap-demo/master/screenshots/iPod-Input.png)
 
 The iPod-Input patch simply connects to the *HyperMusic* app with the correct host port provided. The data can be streamed through the patch's left outlet. It is also possible to print the whole input stream to the *Max window*.
 
-![iPod-DataVisualizer](https://github.com/evenbekkedal/robin-mocap-demo/blob/master/screenshots/iPod-DataVisualizer.png)
+![iPod-DataVisualizer](https://raw.github.com/evenbekkedal/robin-mocap-demo/master/screenshots/iPod-DataVisualizer.png)
 
 The iPod-DataVisualizer patch can perform a simple running graph visualization of the incoming data in the separate X, Y & Z axes. At this time, “Acceleration”, “Rotation” & “Gravity” data is available to display. 
 
 ### iPod SimpleSynth
 
-![iPod SimpleSynth](https://github.com/evenbekkedal/robin-mocap-demo/blob/master/screenshots/iPod-Simplesynth.png)
+![iPod SimpleSynth](https://raw.github.com/evenbekkedal/robin-mocap-demo/master/screenshots/iPod-Simplesynth.png)
 
 The iPod SimpleSynth patch is a simple sonification of the MoCap data provided by the *HyperMusic* app.  
 Make sure the *Fireface12* audio interface is chosen in the Max *Options/Audio status..* menu. Check also that there are five audiocables connected between outputs 1-5 on the interface & four Yamaha speakers + one subwoofer (Speakers 1-4: Output 1-4. Subwoofer: Output 5). The speakers should be placed in a square; front, back, left & right. 
@@ -74,7 +74,7 @@ The sound is controlled by the mocap data streamed from the iPod:
 
 ### iPod Soundsaber & LoopPlayer
 
-![iPod Soundsaber & LoopPlayer](https://github.com/evenbekkedal/robin-mocap-demo/blob/master/screenshots/iPod-Soundsaber%2BLoopplayer.png)
+![iPod Soundsaber & LoopPlayer](https://raw.github.com/evenbekkedal/robin-mocap-demo/master/screenshots/iPod-Soundsaber%2BLoopplayer.png)
 
 The iPod Soundsaber & LoopPlayer patch is based on Kristian Nymoen’s [MoCap synthesizer](http://www.uio.no/english/research/groups/fourms/projects/sma/subprojects/Soundsaber/)  patch, using the *HyperMusic* app as input. 
 
