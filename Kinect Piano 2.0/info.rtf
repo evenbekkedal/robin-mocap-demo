@@ -1,0 +1,139 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf230
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11905\paperh16837\margl1440\margr1440\vieww19940\viewh19520\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\b\fs48 \cf0 OSC messages received by KVL Kinect Tracker:
+\b0  
+\fs28 \
+\
+Incoming messages must have OSC url of: 
+\fs36 /kinect_tracker
+\fs28 \
+\
+
+\fs36 /debug <0 or 1>
+\fs28 \
+- enable/disable printing of blob data to server debug window (default 0)\
+\
+
+\fs36 /sendOSC <0 or 1>\
+
+\fs28 - enable/disable sending of blob data to client destinations via OSC (default 0)\
+\
+
+\fs36 /cameraState <0 or 1>\
+
+\fs28 - turn camera on/off (default 0)\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\fs36 \cf0 /cameraIndex <1 and up>\
+
+\fs28 - set camera index number to use (default 1)\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\fs36 \cf0 /cameraTilt <-30 to 30>\
+
+\fs28 - adjust camera vertical tilt (default 0)\
+NOTE: don't adjust this (should remain fixed in Showcase)\
+\
+
+\fs36 /bgSubtract <0 or 1>\
+
+\fs28 - enable/disable background subtraction (default 0)\
+\
+
+\fs36 /refFrame\
+
+\fs28 - capture reference frame for background subtraction\
+\
+
+\fs36 /depthMinMax <float float (0.45 to 13.0)>\
+
+\fs28 - set minimum and maximum depth values that will be evaluated (in meters, on the z axis - default 0.45, 13.0)\
+\
+
+\fs36 /cullPlanes <0 or 1>\
+
+\fs28 - enable/disable plane culling, as defined below (default 0)\
+\
+
+\fs36 /plane1 <state x1 y1 z1 x2 y2 z2 x3 y3 z3>
+\fs28 \
+
+\fs36 /plane2 <state x1 y1 z1 x2 y2 z2 x3 y3 z3>\
+/plane3 <state x1 y1 z1 x2 y2 z2 x3 y3 z3>\
+/plane4 <state x1 y1 z1 x2 y2 z2 x3 y3 z3>\
+/plane5 <state x1 y1 z1 x2 y2 z2 x3 y3 z3>\
+/plane6 <state x1 y1 z1 x2 y2 z2 x3 y3 z3>\
+
+\fs28 - Up to six planes can be defined for carving out custom tracked areas of space in front of the Kinect\
+- Culling planes are defined by providing thre x/y/z points on the plane (all coordinates in meters)\
+- state argument can be 0 or 1, and defines enable/disable state of specific culling plane\
+\
+\ul Coordinate System (in meters):\ulnone  right-handed\
+- when standing in front of camera, looking at lenses, axes defined as follows:\
+x axis - positive to the right\
+y axis - positive up\
+z axis - positive point directly out of camera into tracked space\
+\
+
+\fs36 /blobs/render <0 or 1>\
+
+\fs28 - enable/disable rendering of blob labels (for server viewing only - default 0)\
+\
+
+\fs36 /blobs/size <1. and up>\
+
+\fs28 - define minimum required area (in pixels) for blob to be identified (default 500.0)\
+\
+
+\fs36 /blobs/tracking <0 or 1>\
+
+\fs28 - enable/disable blob tracking\
+\
+
+\fs36 /blobs/threshold <0.01 and up>\
+
+\fs28 - used only when tracking enabled\
+- define minimum cartesian distance (in meters) required between any two blobs in order for them to be seen as independent blobs\
+\
+
+\fs36 /blobs/buffer <-1 and up>\
+
+\fs28 - used only when tracking enabled\
+- define the number of frames that the tracking system will remember a blob labe/coordinate after it has disappeared\
+examples:\
+	buffer -1 - sets memory to be indefinite\
+	buffer 0 - sets memory of zero frames (this is the default)\
+	buffer 60 - sets memory to 60 frames (2 seconds, since Kinect outputs at 30fps)\
+\
+
+\fs36 /blobs/clear\
+
+\fs28 - clear blob memory (erasing all current label/coordinate associations)\
+\
+\
+---------------------------------------------------------------------------------------------\
+\
+\
+
+\b\fs48 OSC messages sent by KVL Kinect Tracker:
+\b0  
+\fs28 \
+\
+OSC url for outgoing messeges to client destinations is defined in JSON config file (default is /kinect/bobs)\
+\
+Format for outgoing OSC messeages: variable length messages in multiples of 6 elements\
+\
+	<OSC url> <label1 i1 j1 x1 y1 z1 label 2 i2 j2 x2 y2 z2\'85>\
+		-where i and j are in pixel space - x, y, z are in real space (dist in meters)\
+\
+	NOTE: When running tracker as Max patch, messages also send out over [s kinect.blobs]\
+\
+With Tracking disabled, blobs are automatically labeled and ordered nearest to farthest from camera\
+	- blob labels start at 1, and increase\
+}
