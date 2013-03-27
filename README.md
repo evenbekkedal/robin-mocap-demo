@@ -3,8 +3,7 @@
 All of the following patches has been created in Max/Msp. 
 Max/Msp Runtime 6.0 or higher is required for running some of the patches. 
 This can be downloaded [here](http://cycling74.com/downloads/runtime/).
-Some *external-objects* are included in the project folders, such as *OSC-route*, *eM_genverb* & *jit.freenect.grab*. 
-If you are experiencing trouble you might want to look at Max/Msp’s [search path](http://cycling74.com/docs/max5/vignettes/core/search_path.html). Some image & 3D model files are also included.
+Make sure the folder «Robin MoCap Demonstrasjonmateriale 2013» is added to Max/Msp’s [search path](http://cycling74.com/docs/max5/vignettes/core/search_path.html). Some image & 3D model files are also included.
 
 The material currently focus on two types of motion capture hardware, reflected in the subfolders on the top of the folder hierarchy:  
 
@@ -13,10 +12,12 @@ The material currently focus on two types of motion capture hardware, reflected 
 
 ##  iPod Demopatches
 These are patches for demonstrating motion capture using iPhone or iPod devices. 
-All patches rely on the motion data provided by the *Epics HyperMusic* iOS app. It is important that the device and the computer running the patches are on the same network, and that the correct IP address of the computer is set in the app’s settings. The patches can run by themselves, or be included in another patch as *bpatchers*.
-To create a bpatcher object in a Max patch, you can in edit mode press `n`, followed by typing in `bpatcher *name of patcher*`, e.g. `bpatcher deviceInput`. You might have to resize the resulting window in order to view the whole interface of the new patch. 
+All patches rely on the motion data provided by the *Epics HyperMusic* iOS app. It is important that the device and the computer running the patches are on the same network, and that the correct IP address of the computer is set in the app’s settings. The patches can run by themselves, but some can also be run as *abstractions* faceless or with a GUI (*bpatchers*) inside other patches: 
 
-The folder inlcudes these subfolders:
+* To create an abstraction in a Max patcher press `n` for new object, followed by `*name of patcher*`, e.g. `iPod-Input`.
+* To create a bpatcher object in a Max patch, you can in edit mode press `n` for new object, followed by typing in `bpatcher *name of patcher*`, e.g. `bpatcher deviceInput`. You might have to resize the resulting window in order to view the whole GUI of the opened patch. 
+
+The iPod Demopatches folder inlcudes these subfolders:
 
 * Dependencies
 * iPod 3D Avatar Control
@@ -57,7 +58,7 @@ The iPod-Input patch simply connects to the *HyperMusic* app with the correct ho
 
 ![iPod-DataVisualizer](https://raw.github.com/evenbekkedal/robin-mocap-demo/master/screenshots/iPod-DataVisualizer.png)
 
-The iPod-DataVisualizer patch can perform a simple running graph visualization of the incoming data in the separate X, Y & Z axes. At this time, “Acceleration”, “Rotation” & “Gravity” data is available to display. 
+The iPod-DataVisualizer patch can perform a simple running graph visualization of the incoming data in the separate X, Y & Z axes. At this time, “Acceleration”, “Rotation” & “Gravity” data is available to display. This patch can run as a *bpatcher* inside another patch.  
 
 ### iPod SimpleSynth
 
