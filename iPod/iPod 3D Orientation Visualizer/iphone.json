@@ -1,0 +1,9 @@
+{
+	"read" : "Iphone-4.obj",
+	"name" : "iphone",
+	"filter" : "Attitude/Quaternion",
+	"gate" : 1,
+	"rotatexyz" : [ 0.0, 0.0, 15.0 ],
+	"position" : [ 0.0, 0.0, 0.0 ],
+	"camera" : [ 1.0, -3.0, 0.0 ]
+}

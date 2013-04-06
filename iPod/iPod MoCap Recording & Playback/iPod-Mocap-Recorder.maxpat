@@ -3,8 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 8
+			"minor" : 1,
+			"revision" : 1,
+			"architecture" : "x86"
 		}
 ,
 		"rect" : [ 684.0, 125.0, 675.0, 617.0 ],
@@ -49,7 +50,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 249.0, 136.0, 103.0, 20.0 ],
+					"patching_rect" : [ 482.5, 80.0, 103.0, 20.0 ],
 					"text" : "osc-route /mouse"
 				}
 
@@ -359,7 +360,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 249.0, 66.0, 20.0, 20.0 ]
+					"patching_rect" : [ 482.5, 10.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -372,7 +373,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 249.0, 101.0, 70.0, 20.0 ],
+					"patching_rect" : [ 482.5, 45.0, 70.0, 20.0 ],
 					"text" : "mousedata"
 				}
 
@@ -636,8 +637,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 1,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 540.0, 88.0, 299.0, 323.0 ],
@@ -1101,7 +1103,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-18", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-16", 2 ]
@@ -1344,15 +1346,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-61", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-70", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1382,7 +1375,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "iPod-Input.maxpat",
-				"bootpath" : "/Users/evenbekkedal/Dropbox/Kode/Max/Even-max-patches/Robin Demonstrasjonmateriale 2013/iPod Demopatches/iPod MoCap Tools",
+				"bootpath" : "/Users/evenbekkedal/Dropbox/Kode/Max/Even-max-patches/Robin MoCap Demonstrasjonmateriale 2013/iPod/iPod MoCap Tools",
 				"patcherrelativepath" : "../iPod MoCap Tools",
 				"type" : "JSON",
 				"implicit" : 1
