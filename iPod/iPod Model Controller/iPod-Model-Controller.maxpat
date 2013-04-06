@@ -239,7 +239,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 187.5, 200.0, 83.0, 21.0 ],
-					"presentation_rect" : [ 191.0, 195.0, 0.0, 0.0 ],
 					"text" : "Blocky limbs"
 				}
 
@@ -255,8 +254,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 105.0, 202.0, 82.5, 17.0 ],
-					"presentation_rect" : [ 102.5, 201.0, 0.0, 0.0 ]
+					"patching_rect" : [ 105.0, 202.0, 82.5, 17.0 ]
 				}
 
 			}
@@ -270,7 +268,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.5, 54.0, 243.0, 21.0 ],
-					"presentation_rect" : [ 19.0, 49.0, 0.0, 0.0 ],
 					"text" : "Control a 3D model with a mobile device"
 				}
 
@@ -285,7 +282,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 444.0, 112.0, 115.0, 21.0 ],
-					"presentation_rect" : [ 442.416504, 116.0, 0.0, 0.0 ],
 					"text" : "Choose 3D model"
 				}
 
@@ -343,20 +339,6 @@
 					"outlettype" : [ "", "", "", "", "", "" ],
 					"patching_rect" : [ 374.0, 165.0, 201.0, 17.0 ],
 					"text" : "routepass read name rotatexyz position camera"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 9.0,
-					"id" : "obj-1",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "dictionary" ],
-					"patching_rect" : [ 466.0, 453.0, 70.0, 17.0 ],
-					"text" : "dict.deserialize"
 				}
 
 			}
@@ -444,8 +426,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 361.0, 272.0, 25.0, 25.0 ],
-									"presentation_rect" : [ 473.0, 50.0, 0.0, 0.0 ]
+									"patching_rect" : [ 361.0, 272.0, 25.0, 25.0 ]
 								}
 
 							}
