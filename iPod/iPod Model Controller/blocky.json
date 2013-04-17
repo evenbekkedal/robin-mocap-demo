@@ -1,7 +1,7 @@
 {
 	"read" : "blocky.dae",
 	"name" : "blocky",
-	"filter" : "Rotation",
+	"filter" : "Attitude",
 	"gate" : 2,
 	"rotatexyz" : [ 0.0, 180.0, 0.0 ],
 	"position" : [ 0.0, -1.0, 0.0 ],
