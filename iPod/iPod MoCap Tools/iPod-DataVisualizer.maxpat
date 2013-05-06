@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 389.0, 212.0, 427.0, 408.0 ],
+		"rect" : [ 443.0, 209.0, 432.0, 412.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -28,6 +28,23 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-21",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 66.125, 135.5, 63.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 66.875, 134.5, 99.0, 20.0 ],
+					"text" : "recorded data"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 9.0,
@@ -150,7 +167,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 969.400024, 18.5, 59.0, 17.0 ],
+					"patching_rect" : [ 1039.400024, 18.5, 59.0, 17.0 ],
 					"text" : "loadmess 5."
 				}
 
@@ -164,9 +181,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1003.400024, 53.5, 64.0, 20.0 ],
+					"patching_rect" : [ 1073.400024, 53.5, 64.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 355.050049, 127.5, 52.0, 20.0 ],
+					"presentation_rect" : [ 360.125, 138.0, 52.0, 20.0 ],
 					"text" : "Smooth"
 				}
 
@@ -181,9 +198,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 969.400024, 53.5, 34.0, 20.0 ],
+					"patching_rect" : [ 1039.400024, 53.5, 34.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 321.050049, 127.5, 34.0, 20.0 ],
+					"presentation_rect" : [ 326.125, 138.0, 34.0, 20.0 ],
 					"triangle" : 0
 				}
 
@@ -197,9 +214,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 912.400024, 53.5, 37.0, 20.0 ],
+					"patching_rect" : [ 982.400024, 53.5, 37.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 355.050049, 102.5, 37.0, 20.0 ],
+					"presentation_rect" : [ 360.125, 113.0, 37.0, 20.0 ],
 					"text" : "Gain"
 				}
 
@@ -214,9 +231,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 878.400024, 53.5, 34.0, 20.0 ],
+					"patching_rect" : [ 948.400024, 53.5, 34.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 321.050049, 102.5, 34.0, 20.0 ],
+					"presentation_rect" : [ 326.125, 113.0, 34.0, 20.0 ],
 					"triangle" : 0
 				}
 
@@ -230,7 +247,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 878.400024, 18.5, 59.0, 17.0 ],
+					"patching_rect" : [ 948.400024, 18.5, 59.0, 17.0 ],
 					"text" : "loadmess 1."
 				}
 
@@ -262,7 +279,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 693.349976, 86.5, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.125, 102.5, 20.0, 20.0 ]
+					"presentation_rect" : [ 196.125, 51.5, 20.0, 20.0 ]
 				}
 
 			}
@@ -275,9 +292,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 693.349976, 60.5, 173.0, 20.0 ],
+					"patching_rect" : [ 721.349976, 86.5, 173.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 25.125, 102.5, 173.0, 20.0 ],
+					"presentation_rect" : [ 214.125, 51.5, 173.0, 20.0 ],
 					"text" : "Open textfile for data playback"
 				}
 
@@ -302,7 +319,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 584.900024, 86.5, 59.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.125, 154.5, 59.0, 15.0 ],
+					"presentation_rect" : [ 7.125, 136.5, 59.0, 15.0 ],
 					"rounded" : 0.0,
 					"text" : "Play",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -320,8 +337,8 @@
 					"id" : "obj-16",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
 					"patching_rect" : [ 585.400024, 138.5, 233.599976, 17.0 ],
 					"text" : "iPod-Mocap-Playback"
 				}
@@ -361,13 +378,14 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-9",
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 484.200012, 86.5, 62.0, 20.0 ],
+					"patching_rect" : [ 448.200012, 20.5, 62.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 126.225037, 78.5, 62.0, 20.0 ],
-					"text" : "Filter data"
+					"presentation_rect" : [ 126.225037, 78.5, 178.0, 20.0 ],
+					"text" : "Filter live-input data"
 				}
 
 			}
@@ -394,13 +412,14 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-27",
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 292.099976, 86.5, 63.0, 20.0 ],
+					"patching_rect" : [ 292.099976, 86.5, 63.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 25.125, 127.5, 63.0, 20.0 ],
-					"text" : "Print data"
+					"presentation_rect" : [ 25.125, 107.5, 121.0, 20.0 ],
+					"text" : "Print live-input data"
 				}
 
 			}
@@ -414,7 +433,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 272.099976, 86.5, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.125, 127.5, 20.0, 20.0 ]
+					"presentation_rect" : [ 7.125, 107.5, 20.0, 20.0 ]
 				}
 
 			}
@@ -439,8 +458,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 130.5, 138.5, 302.200012, 17.0 ],
-					"text" : "iPod-Input @port 7113"
+					"patching_rect" : [ 130.5, 138.5, 301.700012, 17.0 ],
+					"text" : "iPod-Input @port 9999"
 				}
 
 			}
@@ -967,7 +986,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 969.400024, 86.5, 72.0, 17.0 ],
+					"patching_rect" : [ 1039.400024, 86.5, 72.0, 17.0 ],
 					"text" : "s #0_smooth"
 				}
 
@@ -980,7 +999,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 878.400024, 86.5, 60.0, 17.0 ],
+					"patching_rect" : [ 948.400024, 86.5, 60.0, 17.0 ],
 					"text" : "s #0_gain"
 				}
 
@@ -1480,7 +1499,7 @@
 					"destination" : [ "obj-15", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 423.099976, 130.5, 423.200012, 130.5 ],
+					"midpoints" : [ 423.099976, 130.5, 422.700012, 130.5 ],
 					"source" : [ "obj-10", 1 ]
 				}
 
@@ -1564,7 +1583,7 @@
 					"destination" : [ "obj-15", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 281.599976, 130.5, 281.600006, 130.5 ],
+					"midpoints" : [ 281.599976, 130.5, 281.350006, 130.5 ],
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -1605,6 +1624,16 @@
 					"hidden" : 0,
 					"midpoints" : [ 594.900024, 161.25, 594.900024, 161.25 ],
 					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 809.5, 164.5, 901.950012, 164.5, 901.950012, 76.5, 594.400024, 76.5 ],
+					"source" : [ "obj-16", 1 ]
 				}
 
 			}
@@ -2223,21 +2252,21 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "iPod-Input.maxpat",
-				"bootpath" : "/Users/evenbekkedal/Dropbox/Kode/Max/Even-max-patches/Robin Demonstrasjonmateriale 2013/iPod Demopatches/iPod MoCap Tools",
+				"bootpath" : "/Users/evenbekkedal/Dropbox/Kode/Max/Even-max-patches/Robin MoCap Demonstrasjonmateriale 2013/iPod/iPod MoCap Tools",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "iPod-Mocap-Playback.maxpat",
-				"bootpath" : "/Users/evenbekkedal/Dropbox/Kode/Max/Even-max-patches/Robin Demonstrasjonmateriale 2013/iPod Demopatches/iPod MoCap Recording & Playback",
+				"bootpath" : "/Users/evenbekkedal/Dropbox/Kode/Max/Even-max-patches/Robin MoCap Demonstrasjonmateriale 2013/iPod/iPod MoCap Recording & Playback",
 				"patcherrelativepath" : "../iPod MoCap Recording & Playback",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "subject-Kula-test-1.txt",
-				"bootpath" : "/Users/evenbekkedal/Dropbox/Kode/Max/Even-max-patches/Robin Demonstrasjonmateriale 2013/iPod Demopatches/iPod MoCap Recording & Playback",
+				"name" : "subject-Even-test-0.txt",
+				"bootpath" : "/Users/evenbekkedal/Dropbox/Kode/Max/Even-max-patches/Robin MoCap Demonstrasjonmateriale 2013/iPod/iPod MoCap Recording & Playback",
 				"patcherrelativepath" : "../iPod MoCap Recording & Playback",
 				"type" : "TEXT",
 				"implicit" : 1

@@ -1,9 +1,9 @@
 # Robin MoCap Demonstration Material 2013
 
 All of the following patches has been created in Max/Msp. 
-Max/Msp Runtime 6.0 or higher is required for running some of the patches. 
-This can be downloaded [here](http://cycling74.com/downloads/runtime/).
-Make sure the folder «Robin MoCap Demonstrasjonmateriale 2013» is added to Max/Msp’s [search path](http://cycling74.com/docs/max5/vignettes/core/search_path.html). Some image & 3D model files are also included.
+Max/Msp 6.0 or higher is required for running some of the patches. 
+A free [Runtime](http://cycling74.com/downloads/runtime/) version can be used.
+Make sure the folder «Robin MoCap Demonstrasjonmateriale 2013» is added to Max/Msp’s [search path](http://cycling74.com/docs/max5/vignettes/core/search_path.html). 
 
 The material currently focus on two types of motion capture hardware, reflected in the subfolders on the top of the folder hierarchy:  
 
@@ -19,7 +19,6 @@ All patches rely on the motion data provided by the *Epics HyperMusic* iOS app. 
 
 The iPod Demopatches folder inlcudes these subfolders:
 
-* Dependencies
 * iPod 3D Avatar Control
 * iPod 3D Orientation Visualizer
 * iPod MoCap Recording & Playback

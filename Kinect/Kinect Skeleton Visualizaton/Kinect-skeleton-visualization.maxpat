@@ -7,9 +7,9 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 8.0, 44.0, 721.0, 806.0 ],
+		"rect" : [ 8.0, 44.0, 684.0, 655.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 9.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -36,7 +36,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 220.946655, 80.0, 160.0, 17.0 ],
-					"presentation_rect" : [ 224.933319, 78.0, 0.0, 0.0 ],
 					"text" : "jit.openni requires to read a config file"
 				}
 
@@ -65,21 +64,24 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 269.0, 752.0, 140.0, 44.0 ],
-					"pic" : "UIO:/Users/fourms_user/Desktop/Qualisys-demo/graphics/fourMs-BlackRed.gif"
+					"pic" : "UIO:/Users/fourms_user/Desktop/Qualisys-demo/graphics/fourMs-BlackRed.gif",
+					"presentation" : 1,
+					"presentation_rect" : [ 269.0, 575.0, 140.0, 44.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 1,
 					"fontname" : "Arial",
-					"fontsize" : 30.0,
+					"fontsize" : 48.0,
 					"frgb" : 0.0,
 					"id" : "obj-42",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 4.0, 427.0, 40.0 ],
+					"patching_rect" : [ 11.0, 4.0, 628.0, 60.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 25.0, 24.0, 628.0, 60.0 ],
 					"text" : "Kinect Skeleton Visualization"
 				}
 
@@ -106,7 +108,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 73.0, 326.0, 532.0, 399.0 ]
+					"patching_rect" : [ 73.0, 326.0, 532.0, 399.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 73.0, 135.0, 532.0, 399.0 ]
 				}
 
 			}
@@ -351,26 +355,31 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"fontsize" : 9.0,
+					"fontsize" : 16.0,
 					"frgb" : 0.0,
 					"id" : "obj-6",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.0, 52.5, 60.0, 17.0 ],
+					"patching_rect" : [ 31.0, 52.5, 100.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 73.0, 105.0, 100.0, 24.0 ],
 					"text" : "Start Kinect "
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-4",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 11.0, 51.0, 20.0, 20.0 ]
+					"patching_rect" : [ 11.0, 51.0, 20.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 173.0, 105.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -630,7 +639,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "skeleton.gl.point.maxpat",
-				"bootpath" : "/Users/evenbekkedal/Desktop/Kinect-skeleton-visualizaton",
+				"bootpath" : "/Users/evenbekkedal/Dropbox/Kode/Max/Even-max-patches/Robin MoCap Demonstrasjonmateriale 2013/Kinect/Kinect Skeleton Visualizaton",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
@@ -640,7 +649,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "OSC-route.mxo",
+				"name" : "osc-route.mxo",
 				"type" : "iLaX"
 			}
  ]
